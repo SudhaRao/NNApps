@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<title>adSurveyOrdering</title>
+<meta http-equiv="Content-Type"
+	content="application/xhtml+xml; charset=UTF-8" />
+</h:head>
+<h:body>
+	<h:panelGroup >	
+		<h:panelGrid ></h:panelGrid>	
+		<h:panelGrid ></h:panelGrid>
+		<h:form> 	
+				
+		<div id="layoutContainers">	
+			<div id="ng-view" style="">
+				<h:panelGrid><h:outputLabel>You are view the Ordering Page</h:outputLabel>
+					<h:panelGrid columns="3">						
+						<h:commandLink action="/adSurveyConfSave.xhtml" styleClass="commandLink" >
+							<h:outputText value="Save for Later" styleClass="outputText" />
+						</h:commandLink>	
+						<h:commandLink action="/adSurveyConfSubmit.xhtml" styleClass="commandLink" >
+							<h:outputText value="Submit Order" styleClass="outputText" />
+						</h:commandLink>
+						<h:commandLink action="/adSurveySummary.xhtml" styleClass="commandLink" >
+							<h:outputText value="Cancel" styleClass="outputText" />
+						</h:commandLink>					
+					</h:panelGrid>					
+				</h:panelGrid>
+			</div>
+		</div>
+					
+		</h:form>
+	</h:panelGroup>
+</h:body>
+</html>
