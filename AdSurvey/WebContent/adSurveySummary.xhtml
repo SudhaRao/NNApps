@@ -16,18 +16,12 @@
 			<div id="ng-view" style="">
 				<h:panelGrid>
 					<h:panelGrid >
-						<h:commandLink action="/adSurveyView.xhtml" styleClass="commandLink" >
-							<h:outputText value="View Entire Ad Survey" styleClass="outputText" />
-						</h:commandLink>
-						<h:commandLink action="/adSurveyView.xhtml" styleClass="commandLink" >			
-							<h:outputText value="View Dept Ad Survey" styleClass="outputText"/>
-						</h:commandLink>
-						<h:commandLink action="/adSurveyOrdering.xhtml" styleClass="commandLink" >
-							<h:outputText value="Order Dept Ad Survey" styleClass="outputText" />
-						</h:commandLink>
-						<h:commandLink action="/adSurveyOrdering.xhtml" styleClass="commandLink" >			
-							<h:outputText value="Modify Saved Order" styleClass="outputText"/>
-						</h:commandLink>
+					
+						<h:outputLink value="adSurveyView.xhtml" >View Entire Ad Survey</h:outputLink>
+						<h:outputLink value="adSurveyView.xhtml" >View Dept Ad Survey</h:outputLink>
+						<h:outputLink value="adSurveyOrdering.xhtml" >Order Dept Ad Survey</h:outputLink>
+						<h:outputLink value="adSurveyOrdering.xhtml" >Modify Saved Order</h:outputLink>		
+										
 					</h:panelGrid>					
 				</h:panelGrid>
 			</div>
