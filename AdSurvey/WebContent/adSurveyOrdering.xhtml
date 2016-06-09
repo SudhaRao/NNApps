@@ -9,24 +9,23 @@
 <h:body>
 	<h:panelGroup >	
 		<h:panelGrid ></h:panelGrid>	
-		<h:panelGrid ></h:panelGrid>
-		<h:form> 	
-				
+		<h:panelGrid style="color:green;">Ad Survey Ordering - Page 3</h:panelGrid>
+		
+		<h:form>
 		<div id="layoutContainers">	
 			<div id="ng-view" style="">
-				<h:panelGrid><h:outputLabel>You are view the Ordering Page</h:outputLabel>
+				<h:panelGrid>
 					<h:panelGrid columns="3">		
-					
-						<h:button  outcome="/adSurveyConfSave.xhtml" value="Save for Later"></h:button>
-						<h:button  outcome="/adSurveyConfSubmit.xhtml" value="Submit Order"></h:button>
-						<h:button  outcome="/adSurveySummary.xhtml" value="Cancel"></h:button>										
+						<h:outputLink value="adSurveyConfSave.xhtml" >Save for Later</h:outputLink>
+						<h:outputLink value="adSurveyReview.xhtml" >Review Order</h:outputLink>
+						<h:outputLink value="adSurveyConfCancel.xhtml" >Cancel</h:outputLink>
 										
 					</h:panelGrid>					
 				</h:panelGrid>
 			</div>
 		</div>
-					
-		</h:form>
+		</h:form>			
+		
 	</h:panelGroup>
 </h:body>
 </html>

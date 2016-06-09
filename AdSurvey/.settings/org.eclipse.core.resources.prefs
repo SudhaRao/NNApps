@@ -1,6 +1,8 @@
 eclipse.preferences.version=1
+encoding//WebContent/adSurveyConfCancel.xhtml=UTF-8
 encoding//WebContent/adSurveyConfSave.xhtml=UTF-8
 encoding//WebContent/adSurveyConfSubmit.xhtml=UTF-8
 encoding//WebContent/adSurveyOrdering.xhtml=UTF-8
+encoding//WebContent/adSurveyReview.xhtml=UTF-8
 encoding//WebContent/adSurveySummary.xhtml=UTF-8
 encoding//WebContent/adSurveyView.xhtml=UTF-8
