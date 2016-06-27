@@ -1,0 +1,26 @@
+{
+	"modules": [{
+		"id": "bootstrap_js",
+		"titles": [{
+			"value": "Bootstrap JavaScript",
+			"lang": "en"
+		}],
+		"descriptions": [{
+			"value": "Provides Bootstrap extension.",
+			"lang": "en"
+		}],
+		"contributions": [{
+			"type": "config",
+			"sub-contributions": [{
+				"type": "js",
+				"uris": [{
+					"value": "/bootstrap/js/bootstrap.min.js"
+				},
+				{
+					"value": "/bootstrap/js/bootstrap.js",
+					"type": "debug"
+				}]
+			}]
+		}]
+	}]
+}

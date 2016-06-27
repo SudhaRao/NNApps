@@ -1,0 +1,300 @@
+.newitementry form {
+	width: 400px;
+	padding: 10px;
+	border: 1px solid black;
+	background-color: #f8f8f8;
+	line-height: 100%;
+	display: inline-table;
+	float:left;
+	clear:left;
+}
+
+.newitementry .wide {
+	width:100%;
+}
+
+.newitementry #btnCreateItemEntryButton {
+	clear:left;
+	display: table;
+	margin-top:10pt;
+}
+
+.newitementry .sectionHeader {
+	font-weight: bold;
+	clear: both;
+	margin: 10px;
+	display: block;
+}
+
+.newitementry .panelgrid {
+	padding-top: 20px;	
+}
+
+.newitementry .a {	   
+	padding-right: 10px;
+}
+
+.newitementry .b {	
+	 padding-left: 85px;
+	 padding-bottom: 3px;
+	
+}
+
+.newitementry .selectOneMenuWidth {
+	width:171px;
+	
+}
+
+.newitementry .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.newitementry .pageTable {
+	font-weight:normal;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	color: black;
+	margin: 0;
+	border: 1px solid black;
+	border-spacing: 0;
+	border-collapse: collapse;
+	empty-cells: show;
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+.newitementry .pageTable .headerClass {
+	background-color: #eee;
+	color: WindowText;
+	border-width: 1px solid ThreeDShadow;
+	margin: 2px;
+	padding:4pt;
+	font-size: 13px;
+	white-space: nowrap;
+	overflow: -moz-scrollbars-none;
+	font-weight: normal;
+	overflow: -moz-scrollbars-none;
+	white-space: nowrap;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.newitementry .pageTable .pageControlContainer {
+	float: right;
+	padding: 5px 0px 2px 0px;
+	vertical-align: top;
+}
+
+.newitementry .pageTable .columnClass1 {	   
+	white-space: nowrap;
+}
+
+.newitementry .pageTable .columnClass1Max {	   
+	
+}
+
+.newitementry .rowClass1 {
+	  line-height: 20px;
+}
+
+.newitementry .pageTable .pageControlContainer .smallInputText {
+	width: 30px;
+	text-align: center;
+}
+
+.newitementry .pageTable .columnClassMax,
+.newitementry .pageTable .columnClassCenter,
+.newitementry .pageTable .columnClassCenter,
+.newitementry .pageTable .columnClassCenter,
+.newitementry .pageTable .columnClass {
+	margin: 2px;
+	padding: 0px;
+	padding-left: 4pt;
+	padding-right: 4pt;
+	padding-bottom: 2px;
+	overflow: -moz-scrollbars-none;
+	border: 1px solid #ccc;
+}
+
+.newitementry .pageTable .columnClass,
+.newitementry .pageTable .columnClassTop,
+.newitementry .pageTable .columnClassMax,
+.newitementry .pageTable .columnClassRight,
+.newitementry .pageTable .columnClassCenter {
+	white-space: nowrap;
+}
+
+.newitementry .pageTable .columnClassMax {
+	width: auto;
+}
+
+.newitementry .pageTable .columnClassRight{
+	text-align: right;
+}
+
+.newitementry .pageTable .columnClassCenter{
+	text-align: center;
+}
+
+.newitementry .pageTable .columnClassMoney {
+	width: 4em;
+}
+
+.newitementry .pageTable .columnClassTop {
+	vertical-align: top;
+}
+
+.newitementry .pageTable .columnClass {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;	
+}
+
+.newitementry .pageTable .rowClass {
+	
+}
+
+.newitementry label {
+	font-weight: bold;
+}
+
+.newitementry .mdmInfo {
+	margin-left: 25px;
+}
+
+.newitementry .mdmInfo td {
+	padding: 4px;
+}
+
+.newitementry .floatleft {
+	float:left;
+	clear:left;
+}
+
+.newitementry .floatright {
+	float:right;
+	clear:right;
+}
+
+.newitementry .inlineblock {
+	display:inline-block;
+}
+
+.newitementry .clearform {
+	clear:both;
+	border:none;
+	background-color: transparent;	
+}
+
+.newitementry #frmNewItemEntryForm {
+	width: 100%;
+}
+
+.newitementry .section {
+	border: 1px solid black; 
+	padding: 5px; 
+	width: 360px; 
+	background-color: #f1f1f1;
+	margin-right: 10px;
+	display:block;
+}
+
+.newitementry .main2col {
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+.newitementry .main2col td {
+	vertical-align:top;
+}
+
+.newitementry .slottingfunds {
+	width: 100%;
+    border: 4px black double;
+}
+
+.newitementry .slottingfunds label {
+	font-weight:normal;
+}
+
+.newitementry .slottingfunds table {
+	border-collapse:separate;
+	border-spacing:5px;
+}
+
+.newitementry .datarow {
+	clear: both;
+    text-align: left;
+    padding: 3px;
+}
+
+.newitementry .datarow label {
+	font-weight: bold;
+    color: #555;
+}
+
+.newitementry .datarow label,
+.newitementry .datarow span,
+.newitementry .datarow select {
+	width: 12em;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0px;
+}
+
+.newitementry hr { 
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 2px;
+}
+
+.newitementry .datatable {
+	empty-cells: show;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: black;
+    border-collapse: collapse;
+    border-color: Black;
+    background-color: white;
+}
+
+.newitementry .datatable .rowClass1 {
+	background-color: window;
+	line-height:20px;
+}
+
+.newitementry .datatable .columnClass1 {
+	margin: 2px;
+    padding: 0px;
+    padding-left: 4pt;
+    padding-right: 4pt;
+    padding-bottom: 2px;
+    overflow: -moz-scrollbars-none;
+    border: 1px solid #ccc;
+    white-space:nowrap;
+}
+
+.newitementry .buttonbar {
+	text-align: center;
+	padding: 5px; 
+	margin-top: 15px; 
+	clear: both;
+	display: block;
+}

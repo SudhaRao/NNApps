@@ -1,0 +1,149 @@
+.divisioncoop {
+	display: block;
+	margin-top: 0em;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 100%;
+	min-width:450px;
+	font-size: 0.9em;	
+}
+
+ .divisioncoop .borderFrame {
+ 	border: 1px solid black; 
+ 	padding: 10px; 
+ 	background-color: #f8f8f8;
+ 	display: block;
+ 	overflow: auto;
+ }
+ 
+ .divisioncoop .titletext {
+ 	font-weight: normal;
+ }
+ 
+ .divisioncoop .pageFormat {
+ 	border:none;
+ 	border-spacing:2px;
+ 	border-collapse: separate;
+ }
+ 
+ .divisioncoop label {
+ 	font-weight: bold;
+ }
+ 
+ .divisioncoop .dataTable {
+	empty-cells: show;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	color: black;
+	border-collapse: collapse;
+	border-color: Black;
+	background-color: white;
+}
+
+.divisioncoop .headerClass {
+	background-color: #eee;
+	color: WindowText;
+	border-width: 1px;
+	border-style: solid;
+	border-color: ThreeDShadow;
+	margin: 2px;
+	padding: 4px 4pt 2px 4pt;
+	font-weight: normal;
+	font-size: 1.1em;
+	white-space: nowrap;
+}
+
+.divisioncoop .pageControlContainer {
+	float: right;
+	padding: 5px 0px 2px 0px;
+	vertical-align: top;
+}
+
+.divisioncoop tr.rowClass1,
+.divisioncoop tr.rowClass1Error {
+	line-height: 20px;
+}
+
+.divisioncoop tr.rowClass1 {
+	background-color: window;
+}
+
+.divisioncoop tr.rowClass2 {
+	background-color: ThreeDFace;
+	line-height: 20px;
+}
+
+.divisioncoop tr.rowClass1Error {
+	background-color: #fdd;
+}
+
+.divisioncoop .selectedRowClass td {
+	background-color: #DDF;
+}
+
+.divisioncoop td.columnClass1,
+.divisioncoop td.columnClass1Top,
+.divisioncoop td.columnClass1Max,
+.divisioncoop td.columnClass1Right,
+.divisioncoop td.columnClass1Center,
+.divisioncoop td.columnClass1Wrap {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;
+	overflow: -moz-scrollbars-none;
+	border: 1px solid #ccc;
+}
+
+.divisioncoop td.columnClass1,
+.divisioncoop td.columnClass1Top,
+.divisioncoop td.columnClass1Max,
+.divisioncoop td.columnClass1Right,
+.divisioncoop td.columnClass1Center {
+	white-space: nowrap;
+}
+
+.divisioncoop td.columnClass1Max {
+	width: auto;
+}
+
+.divisioncoop td.columnClass1Right{
+	text-align: right;
+}
+
+.divisioncoop td.columnClass1Center{
+	text-align: center;
+}
+
+.divisioncoop td.columnClass1Money {
+	width: 4em;
+}
+
+.divisioncoop td.columnClass1Top {
+	vertical-align: top;
+}
+
+.divisioncoop td.columnClass2 {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;	
+}
+
+.divisioncoop .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px 0 5px;
+	cursor: pointer;
+}
+
+.divisioncoop :disabled {
+	color: grey;
+}

@@ -1,0 +1,35 @@
+{
+	"modules": [{
+		"id": "wp_theme_main",
+		"prereqs": [{
+			"id": "wp_client_main"
+		},
+		{
+			"id": "wp_client_ext"
+		},
+		{
+			"id": "wp_searchbar"
+		}],
+		"contributions": [{
+			"type": "head",
+			"sub-contributions": [{
+				"type": "js",
+				"uris": [{
+					"value": "/js/head.js"
+				}]
+			},
+			{
+				"type": "css",
+				"uris": [{
+					"value": "/css/master.css"
+				}]
+			}]
+		}]
+	},
+	{
+		"id": "wp_theme_menus",
+		"prereqs": [{
+			"id": "wp_simple_contextmenu_main"
+		}]
+	}]
+}

@@ -1,0 +1,6 @@
+<ol class="breadcrumb" ng-if="data.selectionPath.length > 3" ng-class="{display: data.selectionPath.length>0}">
+    <li ng-repeat="node in data.selectionPath" ng-if="$index > 1" ng-class="{active: $last}">
+      <a ng-if="!$last" href ng-click="navigate(node.id)"><span lang="{{node.title.locale}}" dir="{{node.title.dir}}">{{node.title.value}}</span></a>
+      <span ng-if="$last" lang="{{node.title.locale}}" dir="{{node.title.dir}}">{{node.title.value}}</span>
+    </li>
+</ol>

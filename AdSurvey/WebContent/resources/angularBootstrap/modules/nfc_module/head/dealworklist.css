@@ -1,0 +1,207 @@
+.dealworklist {
+
+}
+
+.dealworklist .header {
+	font-weight:bold;
+	font-size: 1.1em;
+	display:block; 
+	margin-bottom:10px;
+}
+
+.dealworklist .fieldContainer {
+	display: inline;
+}
+
+.dealworklist .dataTable {
+	empty-cells: show;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	color: black;
+	border-collapse: collapse;
+	border-color: Black;
+	background-color: white;
+}
+
+.dealworklist .headerClass {
+	background-color: #eee;
+	color: WindowText;
+	border-width: 1px;
+	border-style: solid;
+	border-color: ThreeDShadow;
+	margin: 2px;
+	padding: 4px 4pt 2px 4pt;
+	font-weight: normal;
+	font-size: 1.1em;
+	white-space: nowrap;
+}
+
+.dealworklist .pageControlContainer {
+	float: right;
+	padding: 5px 0px 2px 0px;
+	vertical-align: top;
+}
+
+.dealworklist .headerClass .commandLink {
+	text-decoration: none;
+}
+
+.dealworklist tr.rowClass1,
+.dealworklist tr.rowClass1Error {
+	line-height: 20px;
+}
+
+.dealworklist tr.rowClass1 {
+	background-color: window;
+}
+
+.dealworklist tr.rowClass2 {
+	background-color: ThreeDFace;
+	line-height: 20px;
+}
+
+.dealworklist tr.rowClass1Error {
+	background-color: #fdd;
+}
+
+.dealworklist .selectedRowClass td {
+	background-color: #DDF;
+}
+
+.dealworklist td.columnClass1,
+.dealworklist td.columnClass1Top,
+.dealworklist td.columnClass1Max,
+.dealworklist td.columnClass1Right,
+.dealworklist td.columnClass1Center,
+.dealworklist td.columnClass1Wrap {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;
+	overflow: -moz-scrollbars-none;
+	border: 1px solid #ccc;
+}
+
+.dealworklist td.columnClass1,
+.dealworklist td.columnClass1Top,
+.dealworklist td.columnClass1Max,
+.dealworklist td.columnClass1Right,
+.dealworklist td.columnClass1Center {
+	white-space:normal;
+}
+
+.dealworklist td.columnClass1Max {
+	width: auto;	
+}
+
+.dealworklist td.columnClass1Right{
+	text-align: right;
+}
+
+.dealworklist td.columnClass1Center{
+	text-align: center;
+}
+
+.dealworklist td.columnClass1Money {
+	width: 4em;
+}
+
+.dealworklist td.columnClass1Top {
+	vertical-align: top;
+}
+
+.dealworklist td.columnClass2 {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;	
+}
+
+.dealworklist .smallInputText {
+  width: 30px;
+}
+
+.dealworklist .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px 0 5px;
+	cursor: pointer;
+}
+
+.dealworklist .outerFrame {
+	border: 1px solid black;
+	border-spacing: 5px; 
+	line-height: 100%;
+}
+
+.dealworklist .innerFrame {
+	border: 1px solid black;
+}
+
+.dealworklist .formatTop {
+	width: 100%;
+	border: 0;
+	border-spacing: 0;
+}
+
+.dealworklist .formatTop td {
+	vertical-align: top;
+}
+
+.dealworklist .formatTop #celButtonBar {
+	text-align: center;
+}
+
+.dealworklist fieldset {
+	padding: 10px; 
+	border: none;
+	margin: 2px;
+}
+
+.dealworklist fieldset.greyborder {
+	border: 1px solid #ccccff;
+}
+
+.dealworklist legend {
+	font-weight: bold;
+}
+
+.dealworklist .datarow {
+	clear: both;
+	text-align: left;
+	padding: 2px;
+}
+
+.dealworklist .block {
+	display: block;
+}
+
+.dealworklist .block label {
+	width: 97px;
+	display: inline-block;
+	font-weight: bold;	
+}
+
+.dealworklist .stacked label {
+	display: table;
+	font-weight: bold;
+}
+
+.dealworklist .dealRefControls {
+	float: right;
+	margin: 2px -3px 0 0;
+}
+
+.dealworklist .dealInformationHeader {
+	width: 100%;
+}
+
+

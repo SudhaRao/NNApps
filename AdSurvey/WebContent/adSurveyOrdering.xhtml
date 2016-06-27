@@ -15,14 +15,19 @@
 		<div id="layoutContainers">	
 			<div id="ng-view" style="">
 				<h:panelGrid>
-					<h:panelGrid columns="3">		
+					<h:panelGrid columns="4">		
 						<h:outputLink value="adSurveyConfSave.xhtml" >Save for Later</h:outputLink>
 						<h:outputLink value="adSurveyReview.xhtml" >Review Order</h:outputLink>
-						<h:outputLink value="adSurveyConfCancel.xhtml" >Cancel</h:outputLink>
-										
+						<h:outputLink value="adSurveyConfCancel.xhtml" >Cancel</h:outputLink>						
+						<h:outputLink value="adSurveySummary.xhtml">Return</h:outputLink>
 					</h:panelGrid>					
 				</h:panelGrid>
 			</div>
+			<h:outputText style="color:red;" value="Thoughts: Cancel button should be activated only when the 
+			user has data keyed. If they accidently/intentionally hit the cancel taking them to cancel confirm page
+			Else, if the user want to exit the page and go to Summary page, 
+			we should provide them with Return button.">
+			</h:outputText>
 		</div>
 		</h:form>			
 		

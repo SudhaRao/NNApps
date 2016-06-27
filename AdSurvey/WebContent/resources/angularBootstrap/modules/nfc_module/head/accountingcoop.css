@@ -1,0 +1,173 @@
+.accountingcoop {
+	background-color: #f8f8f8; 
+	line-height: 100%;
+	display: block;
+	min-width:1000px;
+	font-size: 0.9em;
+}
+ 
+.accountingcoop .header {
+	font-weight:bold;
+	font-size: 1.1em;
+	display:block; 
+	margin-bottom:10px;
+}
+
+.accountingcoop .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px 0 5px;
+	cursor: pointer;
+}
+
+.accountingcoop .borderFrame {
+ 	border: 1px solid black; 
+ 	padding: 10px; 
+ 	background-color: #f8f8f8;
+ 	display: block;
+ 	overflow: auto;
+}
+
+.accountingcoop .titletext {
+	font-weight: normal;
+}
+ 
+.accountingcoop .pageFormat {
+	border:none;
+	border-spacing:2px;
+	border-collapse: separate;
+}
+
+.accountingcoop label {
+	font-weight: bold;
+	margin: 0 11px 0 0;
+}
+
+.accountingcoop input {
+	font-size: 100%;
+}
+
+.accountingcoop .dataTable {
+	empty-cells: show;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+	color: black;
+	border-collapse: collapse;
+	border-color: Black;
+	background-color: white;
+	min-height: 50px;
+}
+
+.accountingcoop .headerClass {
+	background-color: #eee;
+	color: WindowText;
+	border-width: 1px;
+	border-style: solid;
+	border-color: ThreeDShadow;
+	margin: 2px;
+	padding: 4px 4pt 2px 4pt;
+	font-weight: normal;
+	font-size: 1.1em;
+	white-space: nowrap;
+}
+
+.accountingcoop .pageControlContainer {
+	float: right;
+	padding: 5px 0px 2px 0px;
+	vertical-align: top;
+}
+
+.accountingcoop tr.rowClass1,
+.accountingcoop tr.rowClass1Error {
+	line-height: 20px;
+}
+
+.accountingcoop tr.rowClass1 {
+	background-color: window;
+}
+
+.accountingcoop tr.rowClass2 {
+	background-color: ThreeDFace;
+	line-height: 20px;
+}
+
+.accountingcoop tr.rowClass1Error {
+	background-color: #fdd;
+}
+
+.accountingcoop .selectedRowClass td {
+	background-color: #DDF;
+}
+
+.accountingcoop td.columnClass1,
+.accountingcoop td.columnClass1Top,
+.accountingcoop td.columnClass1Max,
+.accountingcoop td.columnClass1Right,
+.accountingcoop td.columnClass1Center,
+.accountingcoop td.columnClass1Wrap {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;
+	overflow: -moz-scrollbars-none;
+	border: 1px solid #ccc;
+}
+
+.accountingcoop td.columnClass1,
+.accountingcoop td.columnClass1Top,
+.accountingcoop td.columnClass1Max,
+.accountingcoop td.columnClass1Right,
+.accountingcoop td.columnClass1Center {
+	white-space: nowrap;
+}
+
+.accountingcoop td.columnClass1Max {
+	width: auto;
+}
+
+.accountingcoop td.columnClass1Right{
+	text-align: right;
+}
+
+.accountingcoop td.columnClass1Center{
+	text-align: center;
+}
+
+.accountingcoop td.columnClass1Money {
+	width: 4em;
+}
+
+.accountingcoop td.columnClass1Top {
+	vertical-align: top;
+}
+
+.accountingcoop td.columnClass2 {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;	
+}
+
+.accountingcoop .buttonBar {
+	margin: 10px 0 0 -5px;
+	display: block;
+}
+
+.accountingcoop .smallInputText {
+	width: 80px;
+	text-align: left;
+}
+
+
+.accountingcoop .selectOneMenu {
+	width:100px;
+	
+}

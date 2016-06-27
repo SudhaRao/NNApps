@@ -17,10 +17,16 @@
 				<h:panelGrid>
 					<h:panelGrid >
 					
-						<h:outputLink value="adSurveyView.xhtml" >View Entire Ad Survey</h:outputLink>
+						<h:commandButton id="viewEntire" value="View Entire Ad Survey Command B" action="#{pc_view.enterPage}" immediate="true">							
+							<f:param name="departmentParam" value="All"/>
+							<f:param name="bookingNumParam" value="#{pc_summary.bookingNum}"/>
+						</h:commandButton>
+						
 						<h:outputLink value="adSurveyView.xhtml" >View Dept Ad Survey</h:outputLink>
 						<h:outputLink value="adSurveyOrdering.xhtml" >Order Dept Ad Survey</h:outputLink>
-						<h:outputLink value="adSurveyOrdering.xhtml" >Modify Saved Order</h:outputLink>		
+						<h:outputLink value="adSurveyOrdering.xhtml" >Modify Saved Order</h:outputLink>	
+						
+							
 										
 					</h:panelGrid>					
 				</h:panelGrid>

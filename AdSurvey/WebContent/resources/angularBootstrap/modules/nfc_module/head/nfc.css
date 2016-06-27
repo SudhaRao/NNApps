@@ -1,0 +1,61 @@
+.nfcportlet {
+	line-height: 100%;
+	display: block;
+	min-width:940px;
+	min-height:200px;
+	font-size: 0.9em;
+	overflow: auto;
+}
+
+.nfcportlet label {
+	font-size: inherit;
+}
+
+.snCalendar {
+	background: #fff url("../images/cal_icon.gif") no-repeat center;
+	border: none;
+	width: 16px;
+	height: 16px;
+	padding: 3px;
+	margin: 0px 3px;
+}
+
+/*
+ * jsf message handler
+ */
+ul.messages {
+	width: 361px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+ul.messages li {
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding: 4px 0 4px 16px;
+}
+
+ul.messages li.InfoMessage {
+	border: 1px solid blue;
+	color: blue;
+	background-image: url('../images/message_info.gif');
+	background-color: transparent;
+}
+
+ul.messages li.WarnMessage {
+	border: 1px solid #948532;
+	color: #948532;
+	background-image: url('../images/message_warn.gif');
+	background-color: #ffffdd;
+}
+
+ul.messages li.ErrorMessage {
+	border: 1px solid #FF2222;
+	color: #FF2222;
+	background-image: url('../images/message_error.gif');
+	background-color: #FFDDDD;
+}
+/* 
+ * jsf message handler
+ */

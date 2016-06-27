@@ -1,0 +1,42 @@
+.accountingexport {
+	
+}
+
+.accountingexport p {
+	margin: 12px 0;
+}
+
+.accountingexport .datarow {
+  clear: both;
+  text-align: left;
+  padding: 7px;
+}
+
+.accountingexport label, .accountingexport select {
+  width: 12em;
+  float: left;
+  margin-right: 5px;
+  padding: 0px;
+}
+
+.accountingexport .buttonBar {
+  margin: 0;
+  clear: both;
+}
+
+.accountingexport .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px;
+	cusor: pointer;
+}
+.accountingexport .ErrorMessage {
+    border: 1px solid #FF2222;
+    color: #FF2222;
+    background-color: #FFDDDD;
+}

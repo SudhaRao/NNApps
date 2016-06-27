@@ -1,0 +1,28 @@
+<!--
+Copyright 2014  IBM Corp. 
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0 
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+-->
+
+<div class="hiddenWidgetsDiv">
+	<!-- widgets in this container are hidden in the UI by default -->
+	<div class="component-container hiddenWidgetsContainer ibmDndRow wpthemeCol12of12 wpthemeFull" name="ibmHiddenWidgets"></div>
+	<div style="clear:both"></div>
+</div>
+<!-- this layout has two rows with two columns each.  In the top row, the left column is twice the width of the right column.
+In the bottom row, the right column is twice the width of the left column.
+On tablets, the columns are of equal width
+On phones, the smaller columns are hidden-->
+<div class="container">
+    <div class="row">
+	<div class="wpthemeCol component-container ibmDndColumn col-md-8 col-sm-6" name="ibmMainContainer"></div>
+	<div class="wpthemeCol component-container ibmDndColumn col-md-4 col-sm-6 hidden-xs" name="social"></div>
+    </div>
+    <div class="row">
+        <div class="wpthemeCol component-container ibmDndColumn col-md-4 col-sm-6 hidden-xs" name="social_2"></div>
+        <div class="wpthemeCol component-container ibmDndColumn col-md-8 col-sm-6" name="secondary"></div>
+    </div>
+</div>

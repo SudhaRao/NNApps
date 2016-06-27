@@ -1,0 +1,3 @@
+.wptheme2Col:after {
+  content: "Your newly created page is using a none-supported layout within this theme. Please update your layout by opening the toolbar, selecting the Page tab and then the Layout tab.";
+}

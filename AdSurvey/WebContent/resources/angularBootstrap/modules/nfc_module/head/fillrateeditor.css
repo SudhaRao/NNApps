@@ -1,0 +1,129 @@
+.fillrateeditor {
+	
+}
+
+.fillrateeditor .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.fillrateeditor #freAdjustForm1 .commandButton {
+	margin-left: 40px;
+}
+
+.fillrateeditor .selectOneMenu {
+	width: 148px;
+}
+
+.fillrateeditor .headerOutputText {
+	color: #43b02a;
+}
+
+.fillrateeditor .outputText {
+	
+}
+
+.fillrateeditor .panelgrid {
+	padding-top: 20px;	
+}
+
+.fillrateeditor .dataTable {
+	empty-cells: show;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    colof: black;
+    border-collapse: collapse;
+    border-color: black;
+    background-color: white;
+}
+
+.fillrateeditor .dataTable tr {
+	display: table-row;
+}
+
+.fillrateeditor .dataTable .headerClass {
+	background-color: #eee;
+    color: WindowText;
+    border-width: 1px;
+    border-style: solid;
+    border-color: ThreeDShadow;
+    margin: 2px;
+    padding: 0px;
+    padding-left: 4pt;
+    padding-right: 4pt;
+    padding-bottom: 2px;
+    font-weight: normal;
+    font-size: 1.1em;
+    white-space: nowrap;
+}
+
+.fillrateeditor .dataTable .rowClass {
+	line-height: 20px;
+}
+
+.fillrateeditor .dataTable .columnClass1 {
+	margin: 2px;
+    padding: 0px;
+    padding-left: 4pt;
+    padding-right: 4pt;
+    padding-bottom: 2px;
+    border: 1px solid #ccc;
+}
+
+.fillrateeditor .colCenter {
+	text-align: center;
+}
+
+.fillrateeditor .colRight {
+	text-align: right;
+}
+
+.fillrateeditor .pageControlContainer {
+	float: right;
+	padding: 5px 0px 2px 0px;
+	vertical-align: top;
+}
+
+.fillrateeditor .pageControlContainer .smallInputText {
+	width: 30px;
+	text-align: center;
+}
+
+.fillrateeditor .datarow {
+	clear: both;
+	text-align: left;
+	padding: 7px;
+}
+
+.fillrateeditor .iconLink {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.fillrateeditor .buttonbar {
+	clear:both;
+}
+
+.fillrateeditor .buttonbar table {
+	border-spacing: 5px;
+	border-collapse: separate;
+	border: none;
+	margin: auto;
+}
+
+.fillrateeditor .inputGrid {
+	border-spacing: 5px;
+	border-collapse: separate;
+}
+
+.fillrateeditor .noItemsMessage {
+	clear:both;
+}

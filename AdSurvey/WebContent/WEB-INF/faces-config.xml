@@ -6,4 +6,74 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
     version="2.0">
     
+    
+    <managed-bean>
+		<managed-bean-name>pc_view</managed-bean-name>
+		<managed-bean-class>com.sn.pagecode.View</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>pc_summary</managed-bean-name>
+		<managed-bean-class>com.sn.pagecode.Summary</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>pc_ordering</managed-bean-name>
+		<managed-bean-class>com.sn.pagecode.Ordering</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>pc_review</managed-bean-name>
+		<managed-bean-class>com.sn.pagecode.Review</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>pc_confsubmit</managed-bean-name>
+		<managed-bean-class>com.sn.pagecode.ConfSubmit</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>pc_confsave</managed-bean-name>
+		<managed-bean-class>com.sn.pagecode.ConfSave</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>pc_confcancel</managed-bean-name>
+		<managed-bean-class>com.sn.pagecode.ConfCancel</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	
+	
+	<navigation-rule>
+		<from-view-id>/adSurveySummary.xhtml</from-view-id>		
+		<navigation-case>
+			<from-action>#{pc_view.enterPage}</from-action>
+			<from-outcome>adSurveyView</from-outcome>
+			<to-view-id>/adSurveyView.xhtml</to-view-id>
+			<redirect></redirect>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>		
+		<from-view-id>/adSurveyView.xhtml</from-view-id>				
+		<navigation-case>
+			<from-action>#{pc_summary.enterPage}</from-action>
+			<from-outcome>adSurveySummary</from-outcome>
+			<to-view-id>/adSurveySummary.xhtml</to-view-id>
+			<redirect></redirect>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+	
+	
+    
 </faces-config>

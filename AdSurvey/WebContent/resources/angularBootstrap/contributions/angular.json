@@ -1,0 +1,116 @@
+{
+    "modules": [
+        {
+            "id": "angular",
+            "contributions": [
+                {
+                    "type": "head",
+                    "sub-contributions": [
+                        {
+                            "type": "js",
+                            "uris": [
+                                {
+                                    "value": "/angular/angular.min.js"
+                                },
+                                {
+                                    "type": "debug",
+                                    "value": "/angular/angular.js"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "descriptions": [
+                {
+                    "lang": "en",
+                    "value": "AngularJS Core"
+                }
+            ],
+            "titles": [
+                {
+                    "lang": "en",
+                    "value": "AngularJS Core"
+                }
+            ]
+        },
+        {
+            "id": "angular-route",
+            "prereqs": [
+                {
+                    "id": "angular"
+                }
+            ],
+            "contributions": [
+                {
+                    "type": "head",
+                    "sub-contributions": [
+                        {
+                            "type": "js",
+                            "uris": [
+                                {
+                                    "value": "/angular/angular-route.min.js"
+                                },
+                                {
+                                    "type": "debug",
+                                    "value": "/angular/angular-route.js"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "descriptions": [
+                {
+                    "lang": "en",
+                    "value": "AngularJS Route"
+                }
+            ],
+            "titles": [
+                {
+                    "lang": "en",
+                    "value": "AngularJS Route"
+                }
+            ]
+        },
+        {
+            "id": "angular-animate",
+            "prereqs": [
+                {
+                    "id": "angular"
+                }
+            ],
+            "contributions": [
+                {
+                    "type": "head",
+                    "sub-contributions": [
+                        {
+                            "type": "js",
+                            "uris": [
+                                {
+                                    "value": "/angular/angular-animate.min.js"
+                                },
+                                {
+                                    "type": "debug",
+                                    "value": "/angular/angular-animate.js"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "descriptions": [
+                {
+                    "lang": "en",
+                    "value": "AngularJS Animate"
+                }
+            ],
+            "titles": [
+                {
+                    "lang": "en",
+                    "value": "AngularJS Animate"
+                }
+            ]
+        }
+   ]
+}

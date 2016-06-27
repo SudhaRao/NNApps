@@ -1,0 +1,67 @@
+.categorymanagementadmin {
+	height: 341px;
+}
+
+.categorymanagementadmin table {
+	margin: 0 0 3px 0;
+}
+
+.categorymanagementadmin label {
+	font-weight: bold;
+	color: #555555;
+}
+
+.categorymanagementadmin ul.messages {
+	width: 361px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+.categorymanagementadmin ul.messages li {
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding: 4px 0 4px 16px;
+}
+
+.categorymanagementadmin ul.messages li.InfoMessage {
+	border: 1px solid blue;
+	color: blue;
+	background-image: url('../images/message_info.gif');
+	background-color: transparent;
+}
+
+.categorymanagementadmin ul.messages li.WarnMessage {
+	border: 1px solid #948532;
+	color: #948532;
+	background-image: url('../images/message_warn.gif');
+	background-color: #ffffdd;
+}
+
+.categorymanagementadmin ul.messages li.ErrorMessage {
+	border: 1px solid #FF2222;
+	color: #FF2222;
+	background-image: url('../images/message_error.gif');
+	background-color: #FFDDDD;
+}
+
+.categorymanagementadmin .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.categorymanagementadmin .labelcell {
+	width: 90px;
+	display: block;
+}
+
+.categorymanagementadmin .inputTextarea {
+	margin-bottom: 3px;
+}

@@ -1,0 +1,310 @@
+.contracts {
+
+}
+
+.contracts .commandLink {
+	display: block;
+	margin: 4px 0;
+}
+
+.contracts .dealsContainer .commandLink.editDeal,
+.contracts .dealsContainer .commandLink.editDeal span
+{
+	margin: 0;
+}
+
+.contracts .inlineLink {
+	display: inline-block;
+}
+
+.contracts .header {
+	font-weight:bold;
+	font-size: .9em;
+	margin: 7px 0 2px 0;
+	display: block;
+}
+
+.contracts .separator {
+	margin-bottom:19px;
+	display: block;
+}
+
+.contracts .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px 0 5px;
+	cursor: pointer;
+}
+
+.contracts .returnButton {
+	margin: 0 0 11px 0;
+}
+
+
+.contracts .content {
+  border: 1px solid #CCC;
+  background-color: #EEE;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contracts .innercontent {
+  border: 1px solid #CCC;
+  background-color: #F4F4F4;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top:5px;
+}
+
+.contracts .borderFrame {
+ 	border: 1px solid black; 
+ 	padding: 10px; 
+ 	background-color: #f8f8f8;
+ 	display: block;
+ 	overflow: auto;
+}
+
+.contracts .titletext {
+	font-weight: normal;
+}
+ 
+.contracts .pageFormat {
+	border:none;
+	border-spacing:2px;
+	border-collapse: separate;
+}
+
+.contracts label {
+	font-weight: bold;
+	margin: 0 11px 0 0;
+}
+
+.contracts input {
+	font-size: 100%;
+}
+
+.contracts .dataTable {
+	empty-cells: show;
+	margin: 0px;
+	padding: 0px;
+	
+	color: black;
+	border-collapse: collapse;
+	border-color: #ccc;
+	background-color: white;
+	min-height: 50px;
+}
+
+.contracts .srpTable {
+	width: auto;
+	margin-bottom: 5px;
+}
+
+.contracts .itemTable{
+	empty-cells: show;
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	border-collapse: collapse;
+	border-color: #ccc;
+	min-height: 50px;
+	width: 100%;
+}
+
+.contracts .itemTable td span
+{
+	display: inline;
+	
+}
+
+
+.contracts .itemTable td span img.iconLink:first-of-type
+{
+	margin-right: 5px;	
+}
+.contracts .itemTable td,
+.contracts .dataTable td
+{
+	border-style: double;
+	border-color: #CCC;
+	padding: 5px;
+}
+.contracts .regionTable {
+  empty-cells: show;
+  margin: 0px;
+  padding: 0px;
+  
+  color: black;
+  border-collapse: collapse;
+  border-color: Black;
+  background-color: white;
+}
+
+.contracts .headerClass {
+	background-color: #eee;
+	color: WindowText;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	margin: 2px;
+	padding: 4px 4pt 2px 4pt;
+	font-weight: normal;
+	font-size: .9em;
+	white-space: nowrap;
+}
+
+.contracts .pageControlContainer {
+	float: right;
+	padding: 5px 0px 2px 0px;
+	vertical-align: top;
+}
+
+.contracts tr.rowClass1 {
+	background-color: window;
+}
+
+.contracts tr.rowClass2 {
+	background-color: ThreeDFace;
+	line-height: 20px;
+}
+
+.contracts tr.rowClass1Error {
+	background-color: #fdd;
+}
+
+.contracts .selectedRowClass td {
+	background-color: #DDF;
+}
+
+.contracts td.columnClass1,
+.contracts td.columnClass1Top,
+.contracts td.columnClass1Max,
+.contracts td.columnClass1Right,
+.contracts td.columnClass1Center,
+.contracts td.columnClass1Wrap {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;
+	overflow: -moz-scrollbars-none;
+	border: 1px solid #ccc;
+}
+
+.contracts td.columnClass1,
+.contracts td.columnClass1Top,
+.contracts td.columnClass1Max,
+.contracts td.columnClass1Right,
+.contracts td.columnClass1Center {
+	white-space: nowrap;
+}
+
+.contracts td.columnClass1Max {
+	width: auto;
+}
+
+.contracts .contractdiv {
+	line-height:2;
+}
+
+.contracts td.columnClass1Right{
+	text-align: right;
+}
+
+.contracts td.columnClass1Center{
+	text-align: center;
+}
+
+.contracts td.columnClass1Money {
+	width: 4em;
+}
+
+.contracts td.columnClass1Top {
+	vertical-align: top;
+}
+
+.contracts td.columnClass2 {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;	
+}
+
+.contracts td.footerClass {
+	background-color: #eee;
+	color: WindowText;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #aaa;
+	margin: 2px;
+	padding: 0px;
+	padding-left: 4pt;
+	padding-right: 4pt;
+	padding-bottom: 2px;
+	font-weight: normal;
+	overflow: -moz-scrollbars-none;
+}
+
+.contracts td.footerClass a {
+	float: right;
+}
+
+.contracts .buttonBar {
+	margin: 10px 0 0 -5px;
+	display: block;
+}
+
+.contracts .pageControlContainer {
+  float: right;
+  padding: 5px 0px 2px 0px;
+  vertical-align: top;
+}
+
+.contracts .smallInputText {
+	width: 30px;
+	text-align: center;
+}
+
+.contracts .datarow {
+	clear: both;
+	text-align: left;
+	padding: 7px;
+}
+
+.contracts .ubdatarow {
+  clear: both;
+  text-align: left;
+  padding: 7px;
+}
+
+.contracts span.outputText {
+ display: block;
+  margin: 4px 0;
+}
+
+.contracts .dealsContainer span.outputText,
+.contracts .dealsContainer .commandLink
+{
+	display: inline;
+	margin: 4px 4px;
+}
+
+.contracts .rowClass1 td {
+    border-color: #ccc;
+    border-style: solid;
+}
+
+.contracts div.itemDetails td {
+    padding: 3px 8px 0;
+}
+
+.contracts div.datarow label {
+    width: 12em;
+}

@@ -1,0 +1,442 @@
+/*
+Copyright 2014  IBM Corp. 
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0 
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+*/
+
+
+
+/*** BODY & DOCUMENT ***/
+body.locale_ja, .locale_ja * {
+	font-family: "MS UI Gothic","MS PGothic","Apple Gothic",Arial,Helvetica,sans-serif;
+}
+
+article, aside, footer, header, hgroup,  nav, section {display:block} /*html 5 elements*/
+/*** end BODY & DOCUMENT ***/
+
+.wpthemeAltText {
+    display: none;
+}
+
+/*** Navigation Utilities ***/
+.wpthemeDraftPageText::before {
+	content:"(";
+}
+.wpthemeDraftPageText::after {
+	content:")";
+}
+.wpthemeHiddenPageText::before {
+	content:"[";
+}
+.wpthemeHiddenPageText::after {
+	content:"]";
+}
+.wpthemeDraftPageText.wpthemeHiddenPageText::before {
+	content:"([";
+}
+.wpthemeDraftPageText.wpthemeHiddenPageText::after {
+	content:"])";
+}
+
+
+/*** Dojo behavior ***/
+
+/* need to hide the iframe, otherwise a scrollbar will appear on the mobile devices */
+iframe#dj_history {
+    display: none;
+}
+
+/*** Drop zones ***/
+
+.wpthemeLayoutContainers .portal-drop-target {
+	display: none;
+}
+
+.wpthemeLayoutContainers div.ibmDndDropZonesActive .portal-drop-target {
+    display: block;
+    position: relative;
+}
+
+.wpthemeLayoutContainers div.ibmDndDropZonesActive .portal-drop-target section {
+    color: #83B995;
+    border: 1px solid #83B995;
+    border-radius: 2px;
+    background-color: #EDFCF2;
+	position: absolute;
+	z-index: 1000;
+	opacity: 0.8;
+}
+
+.wpthemeLayoutContainers div.ibmDndDropZonesActive .portal-drop-target.ibmDndDropZoneOver section {
+    background-color: #a0efba;
+}
+
+.wpthemeLayoutContainers div.ibmDndDropZonesActive .portal-drop-target.ibmDndDropZoneIllegal section,
+.wpthemeLayoutContainers div.ibmDndDropZonesActive.ibmDndDropZoneIllegal .portal-drop-target section {
+    background-color: #ED486E;
+    border-color: #A11222;
+}
+
+.wpthemeLayoutContainers div.ibmDndColumn.ibmDndDropZonesActive :first-child.portal-drop-target section {
+	top: 0px;
+}
+
+.wpthemeLayoutContainers div.ibmDndColumn.ibmDndDropZonesActive .portal-drop-target section {
+	top: -20px;
+	left: -1px;
+	width: 100%;
+    height: 30px;
+}
+
+.wpthemeLayoutContainers div.ibmDndRow.ibmDndDropZonesActive .portal-drop-target section {
+	left: -15px;
+	top: 25px;
+	width: 20px;
+}
+
+.wpthemeLayoutContainers table.ibmDndDropZonesActive .portal-drop-target {
+    display: block;
+    color: #83B995;
+    background-color: #EDFCF2;
+    border: 1px solid #83B995;
+    border-radius: 2px;
+    margin: 5px;
+    height: 2em;
+    min-width: 20px;
+}
+
+.wpthemeLayoutContainers table.ibmDndDropZonesActive .portal-drop-target.ibmDndDropZoneOver {
+    background-color: #a0efba;
+}
+
+.wpthemeLayoutContainers table.ibmDndDropZonesActive .portal-drop-target.ibmDndDropZoneIllegal,
+.wpthemeLayoutContainers table.ibmDndDropZonesActive.ibmDndDropZoneIllegal .portal-drop-target {
+    background-color: #ED486E;
+    border-color: #A11222;
+}
+
+/*** end Drop zones ***/
+
+/** WINDOW STATES ***/
+.ibm-minimized .wpthemeControl .wpthemeControlBody {display: none;}
+.ibm-maximized {margin: 10px 15px; max-width:100%}
+/*** end WINDOW STATES ***/
+
+.edit-mode .wpthemeCol{min-height: 20px; border: 1px dotted #222;}
+
+/*** SKINS ***/
+.wpthemeControl {
+	width: auto;
+	padding: 0;
+	margin: 0 0 20px;
+	background: transparent;
+}
+
+.wpthemeControlHeader {
+	display: table;
+    width: 100%;
+	background-color: transparent;
+    background-image: none;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 3px solid #000000;
+    margin: 0;
+}
+
+.wpthemeControl .wpthemeControlHeader h2 {
+	margin: 0;
+	font-size: 1em;
+	padding-left: 10px;
+    display: table-cell;
+    font-weight: bold;
+    padding: 5px 5px 5px 0px;
+    vertical-align: middle;
+}
+
+.wpthemeControl .wpthemeControlHeader .dndHandle {
+	display: none;
+}
+
+.edit-mode .wpthemeControl .wpthemeControlHeader .dndHandle {
+	display: inline;
+	float: left;
+	margin-right: 4px;
+	height: 1.6em;
+	width: 40px;
+	background-image: url(../images/dragHandle.png);
+	cursor: move;
+}
+
+.wpthemeControlHeader .wpthemeInner{
+	display: table-row;
+	word-wrap: break-word;
+}
+
+.wpthemeControlHeader .wpthemeIcon {
+    padding: 8px 1px;
+    display: table-cell;
+    vertical-align: top;
+    width: 20px;
+	outline: medium none;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+.wpthemeControlHeader a.wpthemeIcon img{
+    background-image: url("../images/master.png");
+	background-position:0 -268px;
+	-moz-opacity: .5;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	width:12px;
+	height:12px;
+	display: block;
+}
+
+.wpthemeControlHeader  a.wpthemeIcon:focus { /* creates outline around element for accessibility */
+	border: 1px dotted black;
+	padding: 7px 0;
+}
+/* Hidden Skin */
+.wpthemeControl.wpthemeHidden .wpthemeControlHeader {
+	display: none;
+}
+
+.edit-mode .wpthemeControl.wpthemeHidden .wpthemeControlHeader {
+	display: table;
+	table-layout: fixed;
+}
+
+.edit-mode .wpthemeControl.wpthemeHidden {
+    box-shadow: 0 1px 3px #D7D7D7;
+	border: 1px solid #D7D7D7;
+    padding: 10px;
+}
+
+
+/** Main Theme Styles **/
+
+.wpthemeMainContent{
+	background: #fff; 
+	min-height: 400px;
+	display: inline-block;
+}
+
+.wpthemeFrame {
+    padding: 10px 0;
+}
+
+a, a:active { 
+	text-decoration: none;
+}
+
+a:hover, a:focus { 
+	text-decoration: underline;
+}
+
+.wpthemeFrame img {
+	border: 0 none; 
+	vertical-align: middle;
+}
+
+.wpthemeLeft {
+    float: left;
+    text-align: left;
+}
+
+.wpthemeRight {
+    float: right;
+    text-align: right;
+}
+
+.wpthemeUnderlineText:hover, .wpthemeUnderlineText:focus {text-decoration:underline; cursor:pointer;}
+
+/*.wpthemeCommonActions {
+	position: relative;
+	color: #cdbfe3;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	background-color: #6f5499;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));
+	background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+	background-image: -o-linear-gradient(top,#563d7c 0,#6f5499 100%);
+	background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+	background-repeat: repeat-x;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}*/
+.wpthemeCommonActions a {
+	color: #cdbfe3;
+}
+
+ul.wpthemeCommonActions > li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 3px 0 0 10px;
+}
+
+.wpthemeBanner ul.wpthemeCommonActions > li > span, 
+.wpthemeBanner ul.wpthemeCommonActions li a:link, 
+.wpthemeBanner ul.wpthemeCommonActions li a:visited,
+.wpthemeBanner ul.wpthemeCommonActions li a:active {
+	font-weight: normal;
+	display: block;
+	border-right: 1px solid #4b4b4b; /* required for IE */
+	border-right: 1px solid rgba(255,255,255,.15);
+	margin: 17px 0;
+    padding: 0 10px 0 0;
+}
+
+.wpthemeBanner ul.wpthemeCommonActions li a:hover,
+.wpthemeBanner ul.wpthemeCommonActions li a:focus {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.wpthemeBrand img {
+    background-image: url("../images/master.png");
+    background-position:0 -680px;
+    width:40px;
+    height:16px;
+	border: 0 none;
+    line-height: 0;
+    vertical-align: middle;
+	display: block;
+	margin: 4px 0 3px;
+}
+
+.wpthemeNavBar {
+	margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
+.wpthemeSearchContainer {
+    position: relative;
+}
+
+.wpthemeSearchIcon {
+    color: #777;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.footer {
+	background-color: #eee;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 100px;
+	color: #555;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+}
+.footer h4 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.breadcrumb {
+  display: none;
+}
+.breadcrumb.display {
+  display: block;
+}
+
+.wpThemeCaret {
+	padding: 10px 5px;
+}
+/** MegaMenu **/
+.menu-large {
+  position: static !important;
+}
+.megamenu {
+  padding: 20px 0px;
+  width:100%;
+}
+.megamenu> li > ul {
+  padding: 0;
+  margin: 0;
+}
+.megamenu> li > ul > li {
+  list-style: none;
+}
+.megamenu> li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #999;
+  white-space: normal;
+  font-size: 12px;
+}
+.megamenu> li > ul > li.active > a {
+  font-weight: bold;
+}
+.megamenu> li ul > li > a:hover,
+.megamenu> li ul > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+.megamenu.disabled > a,
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+  color: #999999;
+}
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.megamenu.dropdown-header {
+  color: #428bca;
+  font-size: 18px;
+}
+.megamenu .dropdown-header {
+    display: block;
+    padding: 3px 20px;
+    color: #333;
+    line-height: 1.4;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+  .megamenu{
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .megamenu> li {
+    margin-bottom: 30px;
+  }
+  .megamenu> li:last-child {
+    margin-bottom: 0;
+  }
+  .megamenu.dropdown-header {
+    padding: 3px 15px !important;
+
+  }
+}
+
+/** redefining Bootstrap CSS **/
+
+body {
+	font-size: 14px !important;
+}
+.navbar-static-top {
+    z-index: 200 !important;
+}
+/********************************
+ *	Paul's additions begin here   *
+ ********************************/
+.wptheme1Col {
+	margin: 0 5%;
+ } 
+ 

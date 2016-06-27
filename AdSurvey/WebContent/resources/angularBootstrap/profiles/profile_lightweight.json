@@ -1,0 +1,26 @@
+{
+	"moduleIDs": [
+		"getting_started_module",
+		"wp_theme_main",
+		"wp_toolbar_ghost",
+		"wp_portlet_css",
+		"wp_client_ext",
+		"wp_status_bar",
+		"wp_theme_menus",
+		"wp_layout_windowstates",
+        "bootstrap_js",
+		"angularTheme"
+	],
+	"titles": [
+		{
+			"value":"Lightweight",
+			"lang":"en"
+		}
+	],
+	"descriptions": [
+		{
+			"value":"This profile has modules necessary for viewing pages with portlets. Modules necessary for iWidgets and modules needed by users to change pages are not included.",
+			"lang":"en"
+		}
+	]
+}

@@ -1,0 +1,182 @@
+.dataitemeditor form {
+	width: 400px;
+}
+
+.dataitemeditor .groupSelectContainer {
+	display: inline-table;
+	margin: 0 0 10px 0;
+}
+
+.dataitemeditor .selectGroupLabel {
+	
+}
+
+.dataitemeditor .selectGroupMenu {
+	margin:0 5px 0 4px;
+}
+
+.dataitemeditor .commandButton {
+	background: #f9d36c;
+	margin: 0;
+	border: 1px solid #ba5;
+	border-right-color: #231;
+	border-bottom-color: #231;
+	background: #f9d36c url('../images/button_gold.gif');
+	padding: 1px 6px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.dataitemeditor fieldset {
+	margin-top: 15px;
+}
+
+.dataitemeditor legend {
+	color: #00a;
+}
+
+.dataitemeditor .clear {
+	clear: both;
+	margin-top: 10px;
+}
+
+.dataitemeditor .datarow {
+	clear: both;
+	text-align: left;
+	padding: 7px;
+	display: block;
+}
+
+.dataitemeditor .datarow label {
+	font-weight: bold;
+	color: #555;
+}
+
+.dataitemeditor .datarow span {
+	width: 12em;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	padding: 0px;
+}
+
+.dataitemeditor .buttonBar {
+	padding-top: 10px;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+	margin-top: 10px;
+	clear: both;
+	display: block;
+}
+
+.dataitemeditor .inputText {
+	border: 1px inset gray;
+}
+
+.dataitemeditor .subgroupwarning {
+	display: inline-block;
+}
+
+.dataitemeditor .pageTable {
+	margin: 0;
+	border: 1px solid black;
+	border-spacing: 0;
+	border-collapse: collapse;
+	empty-cells: show;
+	width: 100%;
+}
+
+.dataitemeditor .pageTable .pageControlContainer {
+	float: right;
+	padding: 5px 0px 2px 0px;
+	vertical-align: top;
+}
+
+.dataitemeditor .pageTable .pageControlContainer .smallInputText {
+	width: 30px;
+	text-align: center;
+}
+
+.dataitemeditor .pageTable .headerClass, .pageTable .footerClass {
+	background-color: #eee;
+	color: WindowText;
+	margin: 2px;
+	padding: 0 4px 2px 4px;
+	font-weight: normal;
+	overflow: -moz-scrollbars-none;
+	font-size: 1.1em;
+	white-space: nowrap;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.dataitemeditor .pageTable .headerClass {
+	border: 1px solid ThreeDShadow;
+}
+
+.dataitemeditor .pageTable .footerClass {
+	border: 1px solid #aaa;
+}
+
+.dataitemeditor .pageTable .columnClassMax,
+.dataitemeditor .pageTable .columnClassCenter,
+.dataitemeditor .pageTable .columnClassCenter,
+.dataitemeditor .pageTable .columnClassCenter,
+.dataitemeditor .pageTable .columnClass {
+	margin: 2px;
+	padding: 0px;
+	padding-left: 4pt;
+	padding-right: 4pt;
+	padding-bottom: 2px;
+	overflow: -moz-scrollbars-none;
+	border: 1px solid #ccc;
+}
+
+.dataitemeditor .pageTable .columnClass,
+.dataitemeditor .pageTable .columnClassTop,
+.dataitemeditor .pageTable .columnClassMax,
+.dataitemeditor .pageTable .columnClassRight,
+.dataitemeditor .pageTable .columnClassCenter {
+	white-space: nowrap;
+}
+
+.dataitemeditor .pageTable .columnClassMax {
+	width: auto;
+}
+
+.dataitemeditor .pageTable .columnClassRight{
+	text-align: right;
+}
+
+.dataitemeditor .pageTable .columnClassCenter{
+	text-align: center;
+}
+
+.dataitemeditor .pageTable .columnClassMoney {
+	width: 4em;
+}
+
+.dataitemeditor .pageTable .columnClassTop {
+	vertical-align: top;
+}
+
+.dataitemeditor .pageTable .columnClass {
+	margin:2px;
+	padding:0px;
+	padding-left:4pt;
+	padding-right:4pt;
+	padding-bottom:2px;	
+}
+
+.dataitemeditor .pageTable .rowClass {
+	
+}
+
+.dataitemeditor .iconLink {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.dataitemeditor .editItemLink {
+	float: right;
+}

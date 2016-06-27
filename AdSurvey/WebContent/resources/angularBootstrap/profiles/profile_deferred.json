@@ -1,0 +1,36 @@
+{
+	"moduleIDs": [
+		"wp_theme_main",
+		"wp_toolbar_host_view",
+		"wp_status_bar",
+		"wp_theme_menus",
+		"wp_layout_windowstates",
+		"wp_portal",
+		"wp_analytics_aggregator",
+		"wp_oob_sample_styles",
+		"wp_ic4_wai_resources",
+		"wp_sametime_proxy",
+        "bootstrap_js",
+		"angularTheme",
+		"angular-route"
+	],
+	"deferredModuleIDs": [
+		"wp_toolbar_host_edit",
+		"wp_analytics_tags",
+		"wp_contextmenu_live_object",
+		"wp_content_targeting_cam",
+		"wcm_inplaceEdit"
+	],
+	"titles": [
+		{
+			"value":"Deferred",
+			"lang":"en"
+		}
+	],
+	"descriptions": [
+		{
+			"value":"This profile has the full set of modules for the theme, but defers loading most of these modules unless actually needed.  This profile balances function and performance.",
+			"lang":"en"
+		}
+	]
+}
