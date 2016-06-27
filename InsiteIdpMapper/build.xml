@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="InsiteIdpMapper">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../IBM/RAD91"/>
+    <property name="InsiteUserApps.location" value="../InsiteUserApps"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+	<property name="app.name" value="InsiteIdpMapper"/>
+	<property name="ant.dir" value="/temp/antbuild/"/> 
+	<property name="build.dir" value="${ant.dir}/${app.name}" />
+	<property name="dest.dir" value="c:/temp/lib" />
+	<property name="dest.file" value="${dest.dir}/${app.name}.jar" />
+  	         	
+    <path id="WebSphere Application Server v8.5 [WebSphere Application Server v8.5 stub].libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/dev/was_public.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/dev/was_dependencies.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/dev/was_internals.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/plugins/com.ibm.ws.jpa.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/plugins/org.apache.tuscany.sca.api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/dev/sca/1.0/sca_api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/dev/sca/2.0/sca_api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/dev/xml/xmlapi.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/plugins/com.ibm.ws.batch.runtime.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/tivoli/tam/PD.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/plugins/com.ibm.ws.prereq.xlxp.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/optionalLibraries/web2mobile/webmsg_applib.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/optionalLibraries/web2mobile/wink-jaxrs-webdav.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/optionalLibraries/web2mobile/rpcadapter/RPCAdapter.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/optionalLibraries/web2mobile/rpcadapter/RPCAdapter-annotation.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/plugins/com.ibm.ws.prereq.jaxrs.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/plugins/com.ibm.ws.prereq.jsfportlet.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/runtimes/base_v85_stub/ola/ola_apis.jar"/>
+    </path>
+    <path id="InsiteIdpMapper.classpath">
+        <pathelement location="bin"/>
+        <path refid="WebSphere Application Server v8.5 [WebSphere Application Server v8.5 stub].libraryclasspath"/>
+        <pathelement location="../../../IBM/WebSphere85/AppServer/plugins/com.ibm.wsfp.main.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+   
+      <target depends="clean,build-project" name="build">
+  	    	<jar jarfile="${dest.file}" basedir="${build.dir}" />
+  	 </target>
+              	
+  	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete file="${dest.file}" />
+	</target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="InsiteIdpMapper.classpath"/>
+        </javac>
+    	<copy todir="${build.dir}">
+			<fileset dir="./bin" />
+		</copy>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="build.xml" dir="${InsiteUserApps.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${InsiteUserApps.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="IdpMappingImpl">
+        <java classname="com.sn.saml.IdpMappingImpl" failonerror="true" fork="yes">
+            <classpath refid="InsiteIdpMapper.classpath"/>
+        </java>
+    </target> 		
+    <target name="SamlAPISample">
+        <java classname="com.sn.samltest.SamlAPISample" failonerror="true" fork="yes">
+            <classpath refid="InsiteIdpMapper.classpath"/>
+        </java>
+    </target>
+</project>

@@ -18,7 +18,26 @@
 				<h:panelGrid>
 					<h:panelGrid id="first">
 					
-					<h:outputLabel style="color:green;" for="first">Ad Survey View - Page 2</h:outputLabel>
+					<h:dataTable value="#{pc_view.dealItemList}" var="dealItemList" border="2">
+    			<h:column id="col1" >
+		    			<f:facet name="header"><h:outputText value="Deal ID" /></f:facet>
+		    			<h:outputText style="" value="#{dealItemList.dealId}" id="reqItemCode"/>	
+		    		</h:column>
+		    	
+		    		<h:column id="col2">
+		    			<f:facet name="header"><h:outputText value="Item Number" /></f:facet>
+		    			<h:outputText value="#{dealItemList.itemNbr}" id="itemNbr"/>
+		    		</h:column>
+		    		
+		    		<h:column id="col3">
+						<f:facet name="header"><h:outputText value="Item Description" /></f:facet>	
+						<h:outputText value="#{dealItemList.itemDesc}" id="itmDesc"/> 				        
+					</h:column>	
+					
+    		</h:dataTable>		
+    			
+						
+						<h:outputLabel style="color:green;" for="first">Ad Survey View - Page 2</h:outputLabel>
 						<h:outputLabel style="color:green;" for="first">Viewing ad survey for #{pc_view.department}</h:outputLabel>
 						<h:outputLabel style="color:green;" for="first">Booking Number: #{pc_view.bookingNum}</h:outputLabel>
 						
